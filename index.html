@@ -6,7 +6,7 @@
   <title>Snake Game</title>
   <style>
     body {
-      background: #ff0101;
+      background: #222;
       color: #fff;
       font-family: Arial, sans-serif;
       display: flex;
@@ -21,8 +21,8 @@
       margin-bottom: 10px;
     }
     #gameCanvas {
-      background: #ffffff;
-      border: 2px solid #000000;
+      background: #111;
+      border: 2px solid #fff;
       margin-top: 20px;
       display: block;
     }
@@ -59,10 +59,10 @@
 
     document.addEventListener('keydown', e => {
       // WASD controls
-      if ((e.key === 'T' || e.key === 'T') && direction !== 'DOWN') direction = 'UP';
-      if ((e.key === 'G' || e.key === 'G') && direction !== 'UP') direction = 'DOWN';
-      if ((e.key === 'F' || e.key === 'F') && direction !== 'RIGHT') direction = 'LEFT';
-      if ((e.key === 'H' || e.key === 'H') && direction !== 'LEFT') direction = 'RIGHT';
+      if ((e.key === 'w' || e.key === 'W') && direction !== 'DOWN') direction = 'UP';
+      if ((e.key === 's' || e.key === 'S') && direction !== 'UP') direction = 'DOWN';
+      if ((e.key === 'a' || e.key === 'A') && direction !== 'RIGHT') direction = 'LEFT';
+      if ((e.key === 'd' || e.key === 'D') && direction !== 'LEFT') direction = 'RIGHT';
       // Spacebar to restart
       if (e.code === 'Space') startGame();
     });
