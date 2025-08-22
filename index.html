@@ -59,10 +59,10 @@
 
     document.addEventListener('keydown', e => {
       // WASD controls
-      if ((e.key === 'w' || e.key === 'W') && direction !== 'DOWN') direction = 'UP';
-      if ((e.key === 's' || e.key === 'S') && direction !== 'UP') direction = 'DOWN';
-      if ((e.key === 'a' || e.key === 'A') && direction !== 'RIGHT') direction = 'LEFT';
-      if ((e.key === 'd' || e.key === 'D') && direction !== 'LEFT') direction = 'RIGHT';
+      if ((e.key === 't' || e.key === 'W') && direction !== 'DOWN') direction = 'UP';
+      if ((e.key === 'g' || e.key === 'S') && direction !== 'UP') direction = 'DOWN';
+      if ((e.key === 'f' || e.key === 'A') && direction !== 'RIGHT') direction = 'LEFT';
+      if ((e.key === 'h' || e.key === 'D') && direction !== 'LEFT') direction = 'RIGHT';
       // Spacebar to restart
       if (e.code === 'Space') startGame();
     });
